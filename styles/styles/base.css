@@ -13037,26 +13037,26 @@ fieldset:disabled .mdc-radio__native-control + .mdc-radio__background,
   margin: inherit; }
 
 @font-face {
-  font-family: "Orbitron";
-  src: url("../fonts/Orbitron/Orbitron-Regular.ttf") format("truetype"); }
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "AmaticSC";
-  src: url("../fonts/Amatic_SC/AmaticSC-Regular.ttf") format("truetype"); }
+  font-family: "AnonymousPro";
+  src: url("../assets/fonts/Anonymous_Pro/AnonymousPro-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "AmaticSC";
+  font-family: "AnonymousPro";
   font-weight: bold;
-  src: url("../fonts/Amatic_SC/AmaticSC-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/Anonymous_Pro/AnonymousPro-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Roboto";
   font-weight: bold;
-  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
 
 html, body {
   width: 100%;
@@ -13068,17 +13068,17 @@ body {
     margin-left: 20px; }
 
 h1 {
-  font-family: "Orbitron";
+  font-family: "Poppins";
   margin-bottom: 0px; }
   h1 > i {
     width: 20px; }
 
 h2 {
-  font-family: "AmaticSC";
+  font-family: "AnonymousPro";
   font-weight: normal;
   margin-top: 0px; }
   h2 strong {
-    font-family: "AmaticSC"; }
+    font-family: "AnonymousPro"; }
 
 h3 {
   color: #00b8d4; }
@@ -13103,35 +13103,27 @@ th {
     display: none; }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   float: left;
   margin-right: 20px; }
   .avatar p {
     margin: 0px; }
   .avatar img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin: 0px; }
 
 .me {
-  margin-top: 10px; }
+  margin-top: 10px;
+  user-select: none; }
   .me p {
-    margin: 0px; }
-  .me > p {
-    clear: left; }
-  .me .align-right {
-    text-align: right; }
-  .me table tbody tr:first-child td:nth-child(2n+1) {
-    padding-left: 5px; }
-  .me table tbody tr:first-child td:nth-child(2n+2) {
-    border-right: 1px;
-    border-color: black;
-    border-right-style: dotted;
-    padding-right: 5px; }
-  .me table tbody tr:first-child td:last-child {
-    border-right-style: none; }
+    margin: 0px 2px;
+    display: inline-block; }
+    .me p:first-child {
+      unicode-bidi: bidi-override;
+      direction: rtl; }
 
 .columns {
   width: 100%;
@@ -13170,19 +13162,11 @@ th {
 .social {
   text-align: center;
   width: 100%; }
-  .social th {
-    display: none; }
-  .social table {
-    margin: 0 auto; }
+  .social p {
+    display: inline-block; }
 
 .page-break {
   page-break-after: always; }
 
 .text-muted, .column-right ul i.text-muted {
   color: #b0bec5; }
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/FontAwesome/FontAwesome-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
