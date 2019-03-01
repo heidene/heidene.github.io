@@ -1,5 +1,6 @@
 body {
-  color: #37474f; }
+  color: #37474f;
+  font-size: 1em; }
 
 @media screen and (max-width: 560px) {
   p strong br {
@@ -25,17 +26,11 @@ h3 {
     width: 100%;
     float: none; } }
 
-@media screen and (max-width: 560px) {
-  .me .align-right {
-    float: none;
-    text-align: left; } }
-
 .paper {
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: #e3f2fd;
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 800px; }
 
 .columns {
   display: flex;
@@ -51,14 +46,14 @@ h3 {
   @media screen and (max-width: 560px) {
     .column-right {
       float: none;
-      width: 100%; } }
+      width: 100%;
+      padding: 10px; } }
   .column-right h3 {
     color: #80d8ff; }
 
 .social {
   background-color: #607d8b;
-  position: absolute;
-  bottom: 0; }
+  padding: 10px 0px 10px 0px; }
   @media screen and (max-width: 560px) {
     .social {
       text-align: left; } }
@@ -66,9 +61,26 @@ h3 {
     color: #80d8ff; }
   .social p {
     padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     color: #e3f2fd; }
   .social a {
     text-decoration: none;
     color: #e3f2fd; }
+
+@media print {
+  body {
+    font-size: 0.85em;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    body > .paper {
+      margin: 0;
+      width: 100%;
+      height: 100%; }
+  .header {
+    height: 100px; }
+  .columns {
+    height: 100%; }
+    .columns .column-right, .columns .column-left {
+      height: 100%; }
+  .social {
+    position: absolute;
+    bottom: 0; } }

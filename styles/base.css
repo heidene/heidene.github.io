@@ -1,18 +1,4 @@
 @charset "UTF-8";
-@media print {
-  body {
-    font-size: 1em;
-    padding-top: 0px;
-    padding-bottom: 0px; }
-    body > .paper {
-      margin: 0;
-      width: 100%;
-      height: 100%; }
-  .columns {
-    height: 100%; }
-    .columns .column-right, .columns .column-left {
-      height: 100%; } }
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -13051,49 +13037,48 @@ fieldset:disabled .mdc-radio__native-control + .mdc-radio__background,
   margin: inherit; }
 
 @font-face {
-  font-family: "Orbitron";
-  src: url("../fonts/Orbitron/Orbitron-Regular.ttf") format("truetype"); }
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "AmaticSC";
-  src: url("../fonts/Amatic_SC/AmaticSC-Regular.ttf") format("truetype"); }
+  font-family: "AnonymousPro";
+  src: url("../assets/fonts/Anonymous_Pro/AnonymousPro-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "AmaticSC";
+  font-family: "AnonymousPro";
   font-weight: bold;
-  src: url("../fonts/Amatic_SC/AmaticSC-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/Anonymous_Pro/AnonymousPro-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Roboto";
   font-weight: bold;
-  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
 
 html, body {
   width: 100%;
   height: 100%; }
 
 body {
-  font-size: 0.65em;
   font-family: "Roboto"; }
   body p {
     margin-left: 20px; }
 
 h1 {
-  font-family: "Orbitron";
+  font-family: "Poppins";
   margin-bottom: 0px; }
   h1 > i {
     width: 20px; }
 
 h2 {
-  font-family: "AmaticSC";
+  font-family: "AnonymousPro";
   font-weight: normal;
   margin-top: 0px; }
   h2 strong {
-    font-family: "AmaticSC"; }
+    font-family: "AnonymousPro"; }
 
 h3 {
   color: #00b8d4; }
@@ -13103,14 +13088,11 @@ th {
 
 .paper {
   position: relative;
-  width: 595px;
-  height: 842px;
-  margin: 0 auto;
+  margin: 20px auto;
   box-sizing: border-box;
   overflow: hidden; }
 
 .header {
-  height: 100px;
   padding: 10px;
   z-index: 9;
   position: relative; }
@@ -13121,35 +13103,27 @@ th {
     display: none; }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   float: left;
   margin-right: 20px; }
   .avatar p {
     margin: 0px; }
   .avatar img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin: 0px; }
 
 .me {
-  margin-top: 10px; }
+  margin-top: 10px;
+  user-select: none; }
   .me p {
-    margin: 0px; }
-  .me > p {
-    clear: left; }
-  .me .align-right {
-    text-align: right; }
-  .me table tbody tr:first-child td:nth-child(2n+1) {
-    padding-left: 5px; }
-  .me table tbody tr:first-child td:nth-child(2n+2) {
-    border-right: 1px;
-    border-color: black;
-    border-right-style: dotted;
-    padding-right: 5px; }
-  .me table tbody tr:first-child td:last-child {
-    border-right-style: none; }
+    margin: 0px 2px;
+    display: inline-block; }
+    .me p:first-child {
+      unicode-bidi: bidi-override;
+      direction: rtl; }
 
 .columns {
   width: 100%;
@@ -13159,13 +13133,12 @@ th {
 
 .column-left {
   display: inline-block;
-  width: 405px;
   padding-left: 5px;
   padding-right: 5px; }
 
 .column-right {
   float: right;
-  width: 190px;
+  min-width: 190px;
   padding-left: 5px;
   padding-right: 5px;
   margin-left: auto; }
@@ -13187,23 +13160,13 @@ th {
       color: #ff1744; }
 
 .social {
-  position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%; }
-  .social th {
-    display: none; }
-  .social table {
-    margin: 0 auto; }
+  .social p {
+    display: inline-block; }
 
 .page-break {
   page-break-after: always; }
 
 .text-muted, .column-right ul i.text-muted {
   color: #b0bec5; }
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/FontAwesome/FontAwesome-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
